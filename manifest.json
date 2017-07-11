@@ -1,0 +1,27 @@
+{
+   "background": {
+    "scripts": [ "background.js" ],
+   "permissions": ["https://intranet.hbtn.io/*"]
+   },
+   "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://intranet.hbtn.io/*"],
+      "js":["highlight.pack.js","helper.js"]
+    }
+  ],
+   "browser_action": {
+      "default_icon": "hbtn.png",
+      "default_title": "Preview code snippets",
+      "default_popup": "popup.html"
+   },
+   "icons": {
+      "128": "hbtn.png"
+   },
+   "description": "",
+   "manifest_version": 2,
+   "name": "hbtn",
+   "short_name": "assignment parser",
+   "permissions": ["tabs","downloads","https://intranet.hbtn.io/*"],
+   "version": "0.1"
+}

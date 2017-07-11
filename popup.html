@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        body {
+            width: 400px;
+        }
+
+        code {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 96%;
+        }
+
+        #sidePanel {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            padding: 5px 8px;
+            left: 0;
+        }
+
+        #fileName {
+            width: 340px;
+            margin-right: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            background: #f8f8f8;
+            text-align: center;
+        }
+
+        #code {
+            margin-bottom: 40px;
+        }
+
+        pre {
+            cursor: pointer;
+        }
+
+        #active .hljs,
+        #active .hljs:hover {
+            background: #fdf6e3;
+        }
+
+        .hljs:hover {
+            background: #fafafa;
+            ;
+        }
+
+        #error {
+            text-align: center;
+            font: 16px sans-serif;
+            margin-top: 32px;
+        }
+    </style>
+    <script type="text/javascript" src="popup.js"></script>
+    <link rel="stylesheet" href="./styles/github.css">
+</head>
+
+<body id="body">
+    <div id="code">
+        <div id="error">No scripts found</div>
+    </div>
+    <div id="sidePanel"></div>
+</body>
+
+</html>
